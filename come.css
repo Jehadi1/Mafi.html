@@ -1,0 +1,97 @@
+h3{
+    background-color: red; color: white; text-align: center; font-size: 40px;
+}
+
+
+
+body{
+    background-color: aqua;
+    background-image: url(JML.jpg);
+    background-size: 400px;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+
+
+.p1{
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 15px;
+
+    color: white; background-color: blue; font-size: 18px;
+}
+
+
+h2{
+    background-color: purple; color: greenyellow; text-align: center;font-size: 30px
+}
+
+
+#p2{
+
+    border: 15px double red;
+    border-radius: 20px;
+    background-color:  yellow; color: black; 
+}
+
+
+.j{
+    background-color: red; color: white;
+    height: 300px;
+    width: 500px;
+    border: 5px solid black;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+#ml{
+    background-color:  lightblue; color: black;
+    height: 100px;
+    width: 300px;
+    padding: 20px;
+    margin: 20px;
+   
+  
+}
+.k{
+    border: 5px solid blueviolet;
+    margin: 120px;
+    outline: 20px dashed blue;
+    outline-offset: 15px;
+    text-align: center;
+    }
+
+
+    ul li{
+        list-style:square ;
+        display: inline-block;
+    }
+    .n{
+        height: 300px;
+        width: 500px;
+        background-color: green;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        position: relative;
+    }
+    .m{
+        height: 200px;
+        width: 200px;
+        background-color: red;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        border-radius: 100%;
+
+    }
+    nav ul li{
+        display: block;
+    }
+

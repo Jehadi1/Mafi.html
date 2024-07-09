@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bang</title>
+        <style>
+            body{
+                margin: 0;
+                height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-image: url(JKL.jpg);
+                background-repeat: no-repeat;
+                background-size: 1700px;
+                overflow: hidden;
+            }
+            .container{
+                font-size: 8px;
+                width: 40em;
+                height: 40em;
+                position:relative ;
+                color: white;
+            }
+            .sun{
+                position: absolute;
+                width: 10em;
+                height: 10em;
+                top: 20.2em;
+                left: 20.2em; 
+                background-color: red;
+                border-radius: 50%;
+                box-shadow: 0 0 3em white;
+            }
+            .earth,.moon{
+                position: absolute;
+                border-style: solid;
+                border-color: white;
+               
+                border-radius: 100%;
+            }
+            .earth{
+                width: 40em;
+                height: 40em;
+                top: 5em;
+                left: 5em;
+                animation: orbit 36.5s linear infinite;
+            }
+            .moon{
+                width: 8em;
+                height: 8em;
+                top: 1.5em;
+                right: 1.5em;
+                animation: orbit 2.7s linear infinite;
+            }
+            .earth::before,
+            .moon::before {
+                content: '';
+                position: absolute;
+                border-radius: 50%;
+            }
+            .earth::before {
+                width: 3em;
+                height: 3em;
+                top: 4.2em;
+                right: 4.2em;
+                background-color: aqua;
+            }  
+            .moon::before {
+                width: 1.2em ;
+                height: 1.2em; 
+                top: 0.5em ; 
+                right: 0.5em;
+                background-color: white ;
+            }
+
+
+            
+            .suk{
+                
+                position: absolute;
+                border-style: solid;
+                border-color: white;
+               
+                border-radius: 100%;
+                width: 20em;
+                height: 20em;
+                top: 10em;
+                left: 10em;
+                animation: orbit 36.5s linear infinite;
+            }
+            .suk::before{
+                content: '';
+                border-radius: 50%;
+                position: absolute;
+            }
+            .suk::before{
+                width: 2em;
+                height: 2em;
+                top: 1.9em;
+                right: 1.9em;
+                background-color: darkred;
+            }
+            .robi{
+                position: absolute;
+                border-style: solid;
+                border-color: white;
+               
+                border-radius: 100%;
+                width: 30em;
+                height: 30em;
+                top: 5em;
+                left: 5em;
+                animation: orbit 36.5s linear infinite;
+            }
+            .robi::before{
+                content: '';
+                border-radius: 50%;
+                position: absolute;
+            }
+            .robi::before{
+                width: 2.5em;
+                height: 2.5em;
+                top: 3.2em;
+                right: 3.2em;
+                background-color: firebrick;
+            }
+            .soni{
+                position: absolute;
+                border-style: solid;
+                border-color: white;
+               
+                border-radius: 100%;
+                width: 50em;
+                height: 50em;
+                top: -5em;
+                left: -5em;
+                animation: orbit 36.5s linear infinite;
+            }
+            .soni::before{
+                content: '';
+                border-radius: 50%;
+                position: absolute;
+            }
+            .soni::before{
+                width: 3.5em;
+                height: 3.5em;
+                top: 5.5em;
+                right: 5.5em;
+                background-color: tomato;
+            }
+            .bud{
+                position: absolute;
+                border-style: solid;
+                border-color: white;
+
+                border-radius: 100%;
+                width: 60em;
+                height: 60em;
+                top: -10em;
+                left: -10em;
+                animation: orbit 36.5s linear infinite;
+            }
+            .bud::before{
+                content: '';
+                border-radius: 50%;
+                position: absolute;
+            }
+            .bud::before{
+                width: 4em;
+                height: 4em;
+                top: 6.7em;
+                right: 6.7em;
+                background-color: bisque;
+            }
+            .bri,.ring {
+                position: absolute;
+                border-style: solid;
+                border-color: white;
+               
+                border-radius: 100%;
+            }
+            .bri{
+                width: 70em;
+                height: 70em;
+                top: -15em;
+                left: -15em;
+                animation: orbit 36.5s linear infinite;
+            }
+            .ring{
+                width: 5.7em;
+                height: 5.7em;
+                top: 6.9em;
+                right: 6.9em;
+                animation: orbit 2.7s linear infinite;
+            }
+            .bri::before,
+            .ring::before{
+                content: '';
+                border-radius: 50%;
+                position: absolute;
+            }
+            .bri::before{
+                width: 5em;
+                height: 5em;
+                top: 7.6em;
+                right: 7.6em;
+                background-color: antiquewhite;
+            }
+         
+            @keyframes orbit {
+                to{
+                    transform: rotate(360deg);
+                }
+            }
+            
+
+            
+
+
+
+                        
+       
+
+                      
+
+.l{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    color: white;
+    font-size: 50px;
+}
+
+        </style>
+    </head>
+    <body>
+   
+        <div class="container">
+            <div class="sun">Sun</div>
+           
+            <div class="earth">
+                <div class="moon">Moon</div>
+                <div class="suk">Sukkro</div>
+                <div class="soni">Soni</div>
+                <div class="robi">Robi</div>
+                <div class="bud">Bud</div>
+                <div class="bri">Brihospti
+                    <div class="ring"></div>
+                </div>
+            Earth</div>
+        </div>
+
+         
+        <div class="l">Bang</div>
+    </body>
+</html>
