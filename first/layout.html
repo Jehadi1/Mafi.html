@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-areas: 
+            "header header header header"
+            "nav    main   main   sidebar"
+            "nav    main   main   advertise"
+            "footer footer footer footer";
+            gap: 5px;
+          
+        .header, .nav, .main, .sidebar, .advertise, .footer{
+            background-color: bisque;
+            border: 5px solid red;
+            padding: 15px;
+            border-radius: 15px;
+        }
+        .header{
+            grid-area: header;
+        }
+        .nav{
+            grid-area: nav;
+        }
+        .main{
+            grid-area: main;
+        }
+        .sidebar{
+            grid-area: sidebar;
+        }
+        .advertise{
+            grid-area: advertise;
+        }
+        .footer{
+            grid-area: footer;
+        }
+
+
+        @media screen and (min-width:576.36px) and (max-width:992px) {
+            .container{
+                grid-template-areas: 
+                "header    header    header"
+                "nav       nav       nav "
+                "main      sidebar   sidebar"               
+                "advertise footer    footer";
+            
+            }
+            
+        }
+    </style>
+</head>
+<body class="container">
+    <header class="header">
+        <h3>The Header</h3>
+    </header>
+    <nav class="nav">
+        <ul>
+            <li><a href="">nav 1</a></li>
+            <li><a href="">nav 2</a></li>
+            <li><a href="">nav 3</a></li>
+        </ul>
+    </nav>
+    <main class="main">
+        <article>
+            <h3>Main 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci obcaecati commodi maiores molestiae, aliquid labore nesciunt mollitia cupiditate nisi dolorum veritatis impedit beatae, reprehenderit excepturi quidem dolores ad? Blanditiis, repellendus.</p>
+        </article>
+        <article>
+            <h3>Main 2</h3>
+            <p>Cumque tenetur deserunt laboriosam. Vel quibusdam magnam aliquam adipisci explicabo deleniti ipsum, ut pariatur, aliquid alias eaque inventore nostrum dolorum enim, ipsa impedit mollitia vero nemo expedita voluptas doloribus quasi?</p>
+        </article>
+    </main>
+    
+        <div class="sidebar">
+            <h4>Sidebar</h4>
+        </div>
+        <div class="advertise">
+            <h4>Advrtise</h4>
+        </div>
+    
+    <footer class="footer">
+        <h3>The Footer</h3>
+    </footer>
+</body>
+</html>
